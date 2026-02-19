@@ -11,5 +11,5 @@ class Solution(object):
                 skipL, skipR = s[l+1 : r+1], s[l:r]
                 return skipL == skipL[::-1] or skipR == skipR[::-1]
             l += 1
-            r += 1
+            r -= 1
         return True
